@@ -1,19 +1,27 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
-const PostList = ({posts, onPress}) => {
-  //console.log(posts);
-  return posts.map(post => (
-    <TouchableOpacity onPress={() => onPress(post.id)} key={post.id}>
-      <View style={styles.contaniner}>
-        <Text style={styles.title}>{post.title.toUpperCase()}</Text>
-        <Text style={styles.body}> {post.body} </Text>
-      </View>
-    </TouchableOpacity>
-  ));
+import {View, Text, StyleSheet, TouchableOpacity, ScrollView,} from 'react-native';
+
+
+const PostList = ({ posts, onPress }) => {
+  return (
+    <ScrollView>
+      {posts.map((post) => (
+        <TouchableOpacity
+          onPress={() => onPress(post.id)}
+          key={post.id}
+        >
+          <View style={styles.container}>
+            <Text style={styles.title}>{post.title.toUpperCase()}</Text>
+            <Text style={styles.body}>{post.body}</Text>
+          </View>
+        </TouchableOpacity>
+      ))}
+    </ScrollView>
+  );
 };
 
 const styles = StyleSheet.create({
-  contaniner: {
+  container: {
     margin: 10,
     padding: 10,
     borderBottomWidth: 0.2,
