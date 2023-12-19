@@ -27,6 +27,8 @@ export const fetchPostById = createAsyncThunk('posts/fetchPostById', async (id: 
   return response.data;
 });
 
+
+
 const postsSlice = createSlice({
   name: 'posts',
   initialState,

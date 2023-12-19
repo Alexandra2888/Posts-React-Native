@@ -7,4 +7,21 @@ export const styles = StyleSheet.create({
       marginLeft: 12,
       marginBottom: 30,
     },
+    input: {
+      backgroundColor: "white",
+      height: 40,
+      paddingLeft: 20,
+      borderRadius: 20,
+      width:"90%",
+      margin:"auto",
+      shadowColor: "#000",
+      shadowOffset: {
+        width: 0,
+        height: 2,
+      },
+      shadowOpacity: 0.25,
+      shadowRadius: 3.84,
+  
+      elevation: 5,
+    },
   });
