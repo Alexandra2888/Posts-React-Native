@@ -1,7 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import {ScrollView, View, Text, StyleSheet} from 'react-native';
+
 import {PostList} from '../../../components/post';
 import Loader from '../../../components/common/Loader';
+import {styles} from "./Main.styles";
+
 const Main = ({navigation}) => {
   const [posts, setPosts] = useState();
 
@@ -33,13 +36,6 @@ const Main = ({navigation}) => {
   );
 };
 
-const styles = StyleSheet.create({
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginLeft: 12,
-    marginBottom: 30,
-  },
-});
+
 
 export default Main;

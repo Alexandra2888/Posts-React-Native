@@ -1,6 +1,8 @@
 import React, {useState, useEffect, useLayoutEffect} from 'react';
 import {ScrollView, Text, StyleSheet, View} from 'react-native';
+
 import Loader from '../../../components/common/Loader';
+import {styles} from "./PostDetail.styles";
 
 const PostDetail = ({route}) => {
   const {postId} = route.params;
@@ -39,30 +41,5 @@ const PostDetail = ({route}) => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'white',
-  },
-  title: {
-    marginLeft: 12,
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginTop: 12,
-  },
-  body: {
-    marginLeft: 12,
-    fontSize: 18,
-    fontWeight: '200',
-    marginTop: 12,
-    marginBottom: 25,
-  },
-  commentsTitle: {
-    marginLeft: 12,
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginTop: 12,
-  },
-});
 
 export default PostDetail;

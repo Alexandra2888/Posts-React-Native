@@ -1,5 +1,8 @@
 import React, {useState, useEffect} from 'react';
-import {View, StyleSheet, Animated} from 'react-native';
+import {View, Animated} from 'react-native';
+
+import {styles} from "./Loader.styles";
+
 const Loader = () => {
   const [rotateValue, setRotateValue] = useState(new Animated.Value(0));
 
@@ -39,10 +42,5 @@ const Loader = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    marginTop: '50%',
-  },
-});
 
 export default Loader;

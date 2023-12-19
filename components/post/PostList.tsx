@@ -1,5 +1,7 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity, ScrollView,} from 'react-native';
+import {View, Text, TouchableOpacity, ScrollView} from 'react-native';
+
+import {styles} from "./PostList.styles";
 
 
 const PostList = ({ posts, onPress }) => {
@@ -20,21 +22,5 @@ const PostList = ({ posts, onPress }) => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    margin: 10,
-    padding: 10,
-    borderBottomWidth: 0.2,
-  },
-  title: {
-    marginBottom: 10,
-    fontSize: 15,
-    fontWeight: 'bold',
-  },
-  body: {
-    color: 'black',
-    opacity: 0.5,
-  },
-});
 
 export default PostList;
