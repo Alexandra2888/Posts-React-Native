@@ -1,8 +1,8 @@
 import React from 'react';
-import {View, Text, TouchableOpacity, ScrollView} from 'react-native';
+import { Text, TouchableOpacity, ScrollView } from 'react-native';
+import { Card } from 'react-native-elements'; 
 
-import {styles} from "./PostList.styles";
-
+import { styles } from './PostList.styles';
 
 const PostList = ({ posts, onPress }) => {
   return (
@@ -12,15 +12,15 @@ const PostList = ({ posts, onPress }) => {
           onPress={() => onPress(post.id)}
           key={post.id}
         >
-          <View style={styles.container}>
-            <Text style={styles.title}>{post.title.toUpperCase()}</Text>
+          <Card containerStyle={styles.cardContainer}>
+            <Card.Title style={styles.title}>{post.title.toUpperCase()}</Card.Title>
+            <Card.Divider />
             <Text style={styles.body}>{post.body}</Text>
-          </View>
+          </Card>
         </TouchableOpacity>
       ))}
     </ScrollView>
   );
 };
-
 
 export default PostList;

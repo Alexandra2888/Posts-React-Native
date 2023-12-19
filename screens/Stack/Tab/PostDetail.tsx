@@ -1,13 +1,10 @@
-import React, { useEffect,useMemo} from 'react';
-import {ScrollView, Text, View} from 'react-native';
-
+import React, { useEffect, useMemo } from 'react';
+import { ScrollView, Text, View } from 'react-native';
 import Loader from '../../../components/common/Loader';
-import {styles} from "./PostDetail.styles";
+import { styles } from './PostDetail.styles';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectPosts, selectPostsStatus, fetchPostById } from '../../../store/reducers/postsReducer';
 import { AppDispatch } from '../../../store/store';
-
-
 
 const PostDetail = ({ route }) => {
   const { postId } = route.params;
@@ -26,7 +23,7 @@ const PostDetail = ({ route }) => {
       {status === 'loading' ? (
         <Loader />
       ) : (
-        <View>
+        <View style={styles.cardContainer}>
           <Text style={styles.title}>{post?.title?.toUpperCase()}</Text>
           <Text style={styles.body}>{post?.body}</Text>
         </View>
@@ -34,6 +31,5 @@ const PostDetail = ({ route }) => {
     </ScrollView>
   );
 };
-
 
 export default PostDetail;
