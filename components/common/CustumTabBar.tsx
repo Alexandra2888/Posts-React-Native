@@ -21,6 +21,7 @@ import {styles} from "./CustumTabBar.styles";
           };
           return (
             <TouchableOpacity
+            key={route.key} 
               onPress={onPress}
               style={
                 isFocused === true ? styles.focusedBg : styles.nonFocusedBg
