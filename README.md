@@ -98,6 +98,12 @@ The project follows a structured organization to improve readability and maintai
 
 ### Screenshots
 
+![localhost_19006_(iPhone 6_7_8)](https://github.com/Alexandra2888/Posts-React-Native/assets/76844097/b212fb1b-d904-4045-980b-8a9f12dbaa29)
+
+
+![localhost_19006_(iPhone 6_7_8) (1)](https://github.com/Alexandra2888/Posts-React-Native/assets/76844097/55745d37-540b-4c4d-aefc-3aafc07e970e)
+
+
 ### Contributing
 
 Contributions are welcome! If you find any issues or have suggestions, feel free to open an issue or create a pull request.
