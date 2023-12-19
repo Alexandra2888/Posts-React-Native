@@ -30,7 +30,7 @@ import {styles} from "./CustumTabBar.styles";
                 style={
                   isFocused === true ? styles.focusedTxt : styles.nonFocusedTxt
                 }>
-                {route.name === 'MainTab' ? 'Posts' : 'Users'}
+                {route.name === 'MainTab' ? 'Posts' : ''}
               </Text>
             </TouchableOpacity>
           );

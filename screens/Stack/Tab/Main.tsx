@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { ScrollView, View, Text, TextInput } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
+
 import { fetchPosts, selectPosts, selectPostsStatus } from '../../../store/reducers/postsReducer';
 import { PostList } from '../../../components/post';
 import Loader from '../../../components/common/Loader';

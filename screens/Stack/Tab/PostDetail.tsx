@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo } from 'react';
 import { ScrollView, Text, View } from 'react-native';
+
 import Loader from '../../../components/common/Loader';
 import { styles } from './PostDetail.styles';
 import { useDispatch, useSelector } from 'react-redux';
